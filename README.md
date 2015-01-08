@@ -16,18 +16,20 @@
 
 ## Использование полученного пакета
 
-* Добавляем такую строку `deb http://download.opensuse.org/repositories/home:/tank_bohr/xUbuntu_14.04 ./` в `/etc/apt/sources.list`
-* Добавляем ключ:
+* Обновляем sources.list и добавляем ключ (от рута)
+```
+# echo 'deb http://download.opensuse.org/repositories/home:/tank_bohr/xUbuntu_14.04 ./' >> /etc/apt/sources.list
+# wget -qO - http://download.opensuse.org/repositories/home:/tank_bohr/xUbuntu_14.04/Release.key | apt-key add -
+```
 
-`wget http://download.opensuse.org/repositories/home:/tank_bohr/xUbuntu_14.04/Release.key`
-`sudo apt-key add Release.key`
-
-* `udo apt-get update`
+* `sudo apt-get update`
 
 ```
 $ sudo apt-cache search ruby-2.1
 ruby-2.1 - Ruby 2.1 with prefix
 ```
+
+Успех!
 
 * Установка `sudo apt-get install ruby-2.1`
 
