@@ -1,0 +1,13 @@
+Source: ruby
+Section: ruby
+Priority: optional
+Build-Depends: <%= build_deps %>
+Standards-Version: 3.9.5
+Homepage: http://www.ruby-lang.org/
+Maintainer: <%= user %>
+
+Package: ruby-<%= package_version %>
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: ruby-interpreter
+Description: Ruby <%= package_version %> with prefix
