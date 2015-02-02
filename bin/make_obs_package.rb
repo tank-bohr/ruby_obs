@@ -42,6 +42,7 @@ build_deps = [
   'bison',
   'pkg-config',
   'libffi-dev',
+  'libjemalloc-dev (>= 3.5)',
 ].join(', ')
 
 
