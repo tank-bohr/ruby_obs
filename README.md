@@ -1,6 +1,6 @@
 # Ruby for OBS
 
-Утилита для сборки ruby-2.1 в deb-пакет с помощью системы [OBS](http://openbuildservice.org/).
+Утилита для сборки ruby-2.2 в deb-пакет с помощью системы [OBS](http://openbuildservice.org/).
 
 ## Запуск
 
@@ -25,25 +25,25 @@
 * `sudo apt-get update`
 
 ```
-$ sudo apt-cache search ruby-2.1
-ruby-2.1 - Ruby 2.1 with prefix
+$ sudo apt-cache search ruby-2.2
+ruby-2.2 - Ruby 2.2 with prefix
 ```
 
 Успех!
 
-* Установка `sudo apt-get install ruby-2.1`
+* Установка `sudo apt-get install ruby-2.2`
 
 * Пакет собирается с префиксом. В этом его назначение
 
-`export PATH=/opt/ruby-2.1/bin:$PATH`
+`export PATH=/opt/ruby-2.2/bin:$PATH`
 
 * PROFIT!!!
 
 ```
 $ ruby -v
-ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-linux]
+ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-linux]
 $ which ruby
-/opt/ruby-2.1/bin/ruby
+/opt/ruby-2.2/bin/ruby
 ```
 
 ## Дополнительная информация
