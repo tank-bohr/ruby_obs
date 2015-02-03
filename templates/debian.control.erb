@@ -8,6 +8,6 @@ Maintainer: <%= user %>
 
 Package: ruby-<%= package_version %>
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, libjemalloc-dev
 Provides: ruby-interpreter
 Description: Ruby <%= package_version %> with prefix
