@@ -6,7 +6,7 @@ require 'erb'
 
 version_major = 2
 version_minor = 1
-version_patch = 5
+version_patch = 6
 
 package_version = "#{ version_major }.#{ version_minor }"
 ruby_version = "#{ version_major }.#{ version_minor }.#{ version_patch }"
